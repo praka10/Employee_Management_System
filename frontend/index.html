@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">SBS Employee Management System</h1>
+        <div id="message" class="alert" style="display: none;"></div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Add Employees</h5>
+                <div id="employee-form" class="form-group">
+                    <input type="number" id="empId" class="form-control" placeholder="Employee ID" required>
+                    <input type="text" id="name" class="form-control" placeholder="Name" required>
+                    <input type="text" id="department" class="form-control" placeholder="Department" required>
+                    <input type="text" id="status" class="form-control" placeholder="Status" required>
+                    <button class="btn btn-primary mt-2" onclick="addEmployee()">Add Employee</button>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center">Employee List</h2>
+        <div id="employee-list" class="list-group"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
